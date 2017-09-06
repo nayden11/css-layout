@@ -13,6 +13,7 @@ header {
 }
 
 main {
+	position: relative;
 	margin: 5px 50px 5px 50px;
 	padding: 10px;
 	border: transparent;
@@ -33,6 +34,15 @@ img[alt="mini"] {
 	height: 5px;
 	width: 5px;
 	border-radius: 100%;
+	margin: 10px 5px 0 5px;
+}
+
+img[alt="contentpic"] {
+	float: left; 
+	height: 150px; 
+	width: 200px; 
+	border: 1px solid black; 
+	margin-right: 10px;
 }
 
 a {
@@ -44,6 +54,11 @@ a {
 
 a:hover {
     color: #D9EDF4;
+}
+
+h6 {
+	margin: 0 5px 0 5px;
+	line-height: 25px;
 }
 
 .wrapper {
@@ -132,5 +147,44 @@ a:hover {
 	border-bottom: 1px solid grey;
 }
 
+.container {
+	display: block;
+	position: relative;
+	width: 72%;
+}
+
 .mtcontainer {
+	line-height: 11px;
+	display: flex;
+}
+
+.aside {
+	display: block;
+	position: absolute;
+	float: right;
+	border: 1px solid grey;
+}
+
+.content {
+	display: inline-block;
+	padding: 10px;
+}
+
+.read {
+	margin-top: 10px;
+	float: left;
+	clear: both;
+}
+
+.btn {
+	float: right;
+	right: 1%;
+	bottom: 1%;
+	border: 1px solid black;
+	border-radius: 5%;
+	padding: 8px;
+}
+
+.btn:hover {
+	background-color: red;
 }
